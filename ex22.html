@@ -11,7 +11,7 @@
      
       // ex22.1-ex22.2
       let scoreInput = Number(prompt("กรอกคะแนน"));
-      if (scoreInput < 60) {
+      if (scoreInput >= 0 && scoreInput < 60) {
         console.log("เกรด 0");
       } else if (scoreInput >= 60 && scoreInput < 70) {
         console.log("เกรด 1");
@@ -19,9 +19,12 @@
         console.log("เกรด 2");
       } else if (scoreInput >= 80 && scoreInput < 90) {
         console.log("เกรด 3");
-      } else {
+      } else if (scoreInput >= 90 && scoreInput <= 100){
         console.log("เกรด 4");
+      } else{
+        console.log("Error");
       }
+
 
     </script>
   </body>
